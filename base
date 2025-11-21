@@ -1,0 +1,52 @@
+CREATE TABLE pilotos (
+    num INT,
+    nombre VARCHAR(40) NOT NULL,
+    nacionalidad VARCHAR(40) NOT NULL,
+    equipo VARCHAR(40) NOT NULL,
+    puntos INT DEFAULT NULL
+);
+
+ALTER TABLE `pilotos` ADD PRIMARY KEY(`num`);
+
+-- Insertar datos de los pilotos
+INSERT INTO pilotos (num, nombre, nacionalidad, equipo, puntos) VALUES
+-- Red Bull Racing
+(1, 'Max Verstappen', 'Neerlandés', 'Red Bull Racing', 341),
+(22, 'Yuki Tsunoda', 'Japonés', 'Red Bull Racing', 28),
+
+-- McLaren
+(4, 'Lando Norris', 'Británico', 'McLaren', 390),
+(81, 'Oscar Piastri', 'Australiano', 'McLaren', 366),
+
+-- Ferrari
+(16, 'Charles Leclerc', 'Monegasco', 'Ferrari', 214),
+(44, 'Lewis Hamilton', 'Británico', 'Ferrari', 148),
+
+-- Mercedes
+(63, 'George Russell', 'Británico', 'Mercedes', 276),
+(47, 'Kimi Antonelli', 'Italiano', 'Mercedes', 122),
+
+-- Aston Martin
+(18, 'Lance Stroll', 'Canadiense', 'Aston Martin', 32),
+(14, 'Fernando Alonso', 'Español', 'Aston Martin', 40),
+
+-- Williams
+(23, 'Alexander Albon', 'Tailandés', 'Williams', 73),
+(55, 'Carlos Sainz', 'Español', 'Williams', 38),
+
+-- Alpine
+(10, 'Pierre Gasly', 'Francés', 'Alpine', 22),
+(50, 'Jack Doohan', 'Australiano', 'Alpine', 0),
+(45, 'Franco Colapinto', 'Argentino', 'Alpine', 0),
+
+-- Haas
+(31, 'Esteban Ocon', 'Francés', 'Haas', 30),
+(87, 'Oliver Bearman', 'Británico', 'Haas', 40),
+
+-- Kick Sauber
+(27, 'Nico Hülkenberg', 'Alemán', 'Kick Sauber', 43),
+(99, 'Gabriel Bortoleto', 'Brasileño', 'Kick Sauber', 19),
+
+-- Racing Bulls
+(40, 'Liam Lawson', 'Neozelandés', 'Racing Bulls', 36),
+(37, 'Isack Hadjar', 'Francés', 'Racing Bulls', 43);
